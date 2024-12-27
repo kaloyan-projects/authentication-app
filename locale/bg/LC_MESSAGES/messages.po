@@ -1,0 +1,46 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Languege: bg\n"
+"X-Generator: Poedit 3.0.1\n"
+
+msgid "Do you want to (1) create an account or (2) log in? (q to quit): "
+msgstr "Искате ли да (1) създадете акаунт или да (2) влезете? (q за изход): "
+
+msgid "Enter a username: "
+msgstr "Въведете потребителско име: "
+
+msgid "Enter a password: "
+msgstr "Въведете парола: "
+
+msgid "Enter your username: "
+msgstr "Въведете вашето потребителско име: "
+
+msgid "Enter your password: "
+msgstr "Въведете вашата парола: "
+
+msgid "User created successfully!"
+msgstr "Акаунтът е създаден успешно!"
+
+msgid "Username already exists."
+msgstr "Акаунтът вече съществува."
+
+msgid "Login successful!"
+msgstr ""
+"Входът е успешен!\n"
+"Добре дошъл, %s!"
+
+msgid "Invalid username or password."
+msgstr "Невалидно име или парола."
+
+msgid "Invalid option. Please try again."
+msgstr "Невалидна опция. Моля, опитайте отново."

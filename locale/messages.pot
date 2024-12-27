@@ -1,0 +1,34 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Languege: en\n"
+
+msgid "Do you want to (1) create an account or (2) log in? (q to quit): "
+msgstr ""
+
+msgid "Enter a username: "
+msgstr ""
+
+msgid "Enter a password: "
+msgstr ""
+
+msgid "Enter your username: "
+msgstr ""
+
+msgid "Enter your password: "
+msgstr ""
+
+msgid "User created successfully!"
+msgstr ""
+
+msgid "Username already exists."
+msgstr ""
+
+msgid "Login successful!"
+msgstr ""
+
+msgid "Invalid username or password."
+msgstr ""
+
+msgid "Invalid option. Please try again."
+msgstr ""

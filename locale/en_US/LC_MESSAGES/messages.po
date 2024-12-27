@@ -1,0 +1,46 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Languege: en\n"
+"X-Generator: Poedit 3.0.1\n"
+
+msgid "Do you want to (1) create an account or (2) log in? (q to quit): "
+msgstr "Do you want to (1) create an account or (2) log in? (q to quit): "
+
+msgid "Enter a username: "
+msgstr "Enter a username: "
+
+msgid "Enter a password: "
+msgstr "Enter a password: "
+
+msgid "Enter your username: "
+msgstr "Enter your username: "
+
+msgid "Enter your password: "
+msgstr "Enter your password: "
+
+msgid "User created successfully!"
+msgstr "User created successfully!"
+
+msgid "Username already exists."
+msgstr "Username already exists."
+
+msgid "Login successful!"
+msgstr ""
+"Login successful!\n"
+"Welcome, %s!"
+
+msgid "Invalid username or password."
+msgstr "Invalid username or password."
+
+msgid "Invalid option. Please try again."
+msgstr "Invalid option. Please try again."
