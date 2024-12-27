@@ -3,7 +3,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Languege: en\n"
 
-msgid "Do you want to (1) create an account or (2) log in? (q to quit): "
+msgid "Do you want to (1) create an account, (2) delete user or (3) log in? (q to quit): "
 msgstr ""
 
 msgid "Enter a username: "
@@ -25,6 +25,12 @@ msgid "Username already exists."
 msgstr ""
 
 msgid "Login successful!"
+msgstr ""
+
+msgid "User %s has been deleted."
+msgstr ""
+
+msgid "Your last login was at: %s"
 msgstr ""
 
 msgid "Invalid username or password."

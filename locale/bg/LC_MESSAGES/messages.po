@@ -13,8 +13,12 @@ msgstr ""
 "Languege: bg\n"
 "X-Generator: Poedit 3.0.1\n"
 
-msgid "Do you want to (1) create an account or (2) log in? (q to quit): "
-msgstr "Искате ли да (1) създадете акаунт или да (2) влезете? (q за изход): "
+msgid ""
+"Do you want to (1) create an account, (2) delete user or (3) log in? (q to "
+"quit): "
+msgstr ""
+"Искате ли да (1) създадете акаунт, да (2) изтриете акаунт или да (3) "
+"влезете? (q за изход): "
 
 msgid "Enter a username: "
 msgstr "Въведете потребителско име: "
@@ -38,6 +42,12 @@ msgid "Login successful!"
 msgstr ""
 "Входът е успешен!\n"
 "Добре дошъл, %s!"
+
+msgid "User %s has been deleted."
+msgstr "Потребителят %s беше изтрит."
+
+msgid "Your last login was at: %s"
+msgstr "Последното Ви влизане беше на: %s"
 
 msgid "Invalid username or password."
 msgstr "Невалидно име или парола."

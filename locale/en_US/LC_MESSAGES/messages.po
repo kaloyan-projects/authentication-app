@@ -13,8 +13,12 @@ msgstr ""
 "Languege: en\n"
 "X-Generator: Poedit 3.0.1\n"
 
-msgid "Do you want to (1) create an account or (2) log in? (q to quit): "
-msgstr "Do you want to (1) create an account or (2) log in? (q to quit): "
+msgid ""
+"Do you want to (1) create an account, (2) delete user or (3) log in? (q to "
+"quit): "
+msgstr ""
+"Do you want to (1) create an account, (2) delete an account or (3) log in? "
+"(q to quit): "
 
 msgid "Enter a username: "
 msgstr "Enter a username: "
@@ -38,6 +42,12 @@ msgid "Login successful!"
 msgstr ""
 "Login successful!\n"
 "Welcome, %s!"
+
+msgid "User %s has been deleted."
+msgstr "User %s has been deleted."
+
+msgid "Your last login was at: %s"
+msgstr "Your last login was at: %s"
 
 msgid "Invalid username or password."
 msgstr "Invalid username or password."

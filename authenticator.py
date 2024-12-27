@@ -4,6 +4,8 @@ import getpass
 import gettext
 import os
 import locale
+import time
+from datetime import datetime
 
 def set_language(lang_code):
     locales_dir = os.path.join(os.path.dirname(__file__), 'locale')
@@ -54,26 +56,49 @@ def create_user(username, password):
 
 # Function to log in a user
 def login_user(username, password):
-    conn = sqlite3.connect('users.db')
-    c = conn.cursor()
-    c.execute('SELECT * FROM users WHERE username = ? AND password = ?', (username, hash_password(password)))
-    user = c.fetchone()
-    conn.close()
-    if user:
-        print(_("Login successful!") % username)
-    else:
-        print(_("Invalid username or password."))
+	conn = sqlite3.connect('users.db')
+	c = conn.cursor()
+	c.execute('SELECT * FROM users WHERE username = ? AND password = ?', (username, hash_password(password)))
+	user = c.fetchone()
+	if user:
+		last_login = user[3]
+		current_time = int(time.time())
+		c.execute('UPDATE users SET last_login = ? WHERE username = ?', (current_time, username))
+		conn.commit()
+		print(_("Login successful!") % username)
+		conn.close()
+		if last_login:
+			last_login_readable = datetime.fromtimestamp(last_login).strftime('%Y-%m-%d %H:%M:%S')
+			print(_("Your last login was at: %s") % last_login_readable)
+		return True
+	else:
+		print(_("Invalid username or password."))
+		conn.close()
+		return False
+	
+def delete_user(username):
+	conn = sqlite3.connect('users.db')
+	c = conn.cursor()
+	c. execute('DELETE FROM users WHERE username = ?', (username,))
+	conn.commit()
+	conn.close()
+	print(_("User %s has been deleted.") % username)
 
 # Main program loop
 def main():
     create_database()
     while True:
-        action = input(_("Do you want to (1) create an account or (2) log in? (q to quit): "))
+        action = input(_("Do you want to (1) create an account, (2) delete user or (3) log in? (q to quit): "))
         if action == '1':
             username = input(_("Enter a username: "))
             password = getpass.getpass(_("Enter a password: "))
             create_user(username, password)
         elif action == '2':
+            username = input(_("Enter your username: "))
+            password = getpass.getpass(_("Enter your password: "))
+            if login_user(username, password):
+                delete_user(username)
+        elif action == '3':
             username = input(_("Enter your username: "))
             password = getpass.getpass(_("Enter your password: "))
             login_user(username, password)
